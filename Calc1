@@ -1,0 +1,33 @@
+def calc():
+
+    print("enter 1 for addition")
+    print("enter 2 for subtraction")
+    print("enter 3 for multiplication")
+    print("enter 4 for division")
+
+    choice = int(input("enter your choice: "))
+    num1= int(input("enter first number: "))
+    num2= int(input("enter second number: "))
+
+
+    if choice == 1:
+        print(num1 + num2)
+    elif choice == 2:
+        print(num1 - num2)
+    elif choice == 3:
+        print(num1 * num2)
+    elif choice == 4:
+        print(num1/num2)
+    else:
+        print("invalid choice")
+
+
+def main():
+    calc()
+    y_n = input("do you want to continue? (y/n): ")
+    if y_n == 'y':
+        main()
+    else:
+        print("thank you for using the calculator")
+
+main()
