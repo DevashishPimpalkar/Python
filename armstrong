@@ -1,13 +1,13 @@
 n = int(input("Enter a number: "))
 sum = 0
-orignal = n
+original = n
 
 while n > 0:
     a = n % 10
     sum = sum + (a ** 3)
     n //= 10
 
-if orignal == sum:
+if original == sum:
     print("armstrong")
 else:
     print("not a armstrong")
