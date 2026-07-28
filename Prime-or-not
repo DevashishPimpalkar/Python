@@ -1,0 +1,17 @@
+n = int(input("enter number to check: "))
+
+i = 2
+flag = 0
+
+while(i < n):
+    if n % i == 0:
+        flag = 1
+        break
+    i += 1
+
+if n <= 1:
+    print("not prime")
+elif flag == 0:
+    print("prime")
+else:
+    print("not prime")
