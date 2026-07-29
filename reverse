@@ -1,0 +1,16 @@
+n = int(input("enter number: "))
+
+# shortcut way it to do in this way: 
+# print(int(str(n)[::-1]))
+
+rev = 0
+a = 0
+
+while n < 0:
+    a = n % 10
+    rev = rev * 10 + a
+    print(rev)
+    n //= 10
+
+print(rev)
+
