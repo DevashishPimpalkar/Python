@@ -1,0 +1,15 @@
+sentence = input("Enter a sentence: ")
+
+print("Characters:", len(sentence))
+
+words = sentence.split()
+print("Words:", len(words))
+
+vowels = 0
+
+for ch in sentence:
+    if ch.lower() in "aeiou":
+        vowels += 1
+
+print("Vowels:", vowels)
+print("Reversed:", sentence[::-1])
